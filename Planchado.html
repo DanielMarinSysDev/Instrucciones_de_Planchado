@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Interactiva para Aplicar Parches DTF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .step-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .step-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .icon-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .icon-list span.icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            width: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-800 flex items-center justify-center min-h-screen p-4">
+
+    <main class="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-6 sm:p-10">
+        <div class="text-center mb-6">
+            <h1 class="text-2xl sm:text-3xl font-bold text-amber-900">Guía Interactiva de Aplicación</h1>
+            <p class="text-stone-600 mt-2">Sigue los pasos para estampar tu parche DTF como un profesional.</p>
+        </div>
+
+        <div class="mb-8 px-1">
+            <div class="w-full bg-stone-200 rounded-full h-2.5">
+                <div id="progressBar" class="bg-amber-500 h-2.5 rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <div id="steps-container">
+            <div class="step-content active">
+                <h2 class="text-xl font-bold mb-4 text-center">Paso 0: Materiales Necesarios</h2>
+                <p class="text-center text-stone-600 mb-6">Asegúrate de tener todo a mano antes de empezar.</p>
+                <ul class="icon-list text-lg">
+                    <li><span class="icon">👕</span> Tu prenda limpia y seca</li>
+                    <li><span class="icon">🎨</span> Tu parche DTF personalizado</li>
+                    <li><span class="icon">♨️</span> Plancha de ropa (sin vapor)</li>
+                    <li><span class="icon">🟫</span> Superficie plana y dura</li>
+                    <li><span class="icon">📜</span> Papel para hornear (papel vegetal)</li>
+                </ul>
+            </div>
+
+            <div class="step-content">
+                <h2 class="text-xl font-bold mb-4 text-center">Paso 1: Preparación</h2>
+                <div class="space-y-4 text-left">
+                    <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                        <h3 class="font-bold">1. Precalienta tu plancha</h3>
+                        <p class="text-stone-700">Ajusta la temperatura a media-alta (150-160°C o "algodón"). <b class="text-red-700">¡Apaga la función de vapor!</b></p>
+                    </div>
+                    <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                        <h3 class="font-bold">2. Prepara la prenda</h3>
+                        <p class="text-stone-700">Colócala sobre una superficie dura y alísala bien para que no queden arrugas.</p>
+                    </div>
+                    <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                        <h3 class="font-bold">3. Pre-planchado</h3>
+                        <p class="text-stone-700">Pasa la plancha caliente durante 5-10 segundos sobre la zona para quitar la humedad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-content">
+                <h2 class="text-xl font-bold mb-4 text-center">Paso 2: Aplicación del Parche</h2>
+                 <div class="space-y-4 text-left">
+                    <div class="p-3 bg-stone-50 rounded-lg"><b>1. Posiciona</b> el parche sobre la prenda, con el diseño hacia arriba.</div>
+                    <div class="p-3 bg-stone-50 rounded-lg"><b>2. Cubre</b> el parche con una hoja de papel para hornear.</div>
+                    <div class="p-3 bg-amber-50 rounded-lg border border-amber-200">
+                        <h3 class="font-bold">3. ¡A Planchar!</h3>
+                        <p class="text-stone-700">Presiona con <b>fuerza y de manera uniforme</b> durante 15-20 segundos. No deslices la plancha, ¡solo presiona!</p>
+                    </div>
+                     <div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="font-bold text-blue-800">❄️ 4. ¡Deja Enfriar!</h3>
+                        <p class="text-stone-700">Retira la plancha y espera a que el parche esté <b>completamente frío</b> al tacto. Es el paso más importante.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-content">
+                <h2 class="text-xl font-bold mb-4 text-center">Paso 3: El Despegado (Cold Peel)</h2>
+                <p class="text-center text-stone-600 mb-6">Una vez que esté totalmente frío, es hora de revelar tu diseño.</p>
+                <div class="space-y-4 text-left">
+                    <div class="p-4 bg-stone-50 rounded-lg">
+                        <p><b>1. Despega con cuidado</b> la película transparente desde una esquina, de forma lenta y uniforme.</p>
+                    </div>
+                    <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-300">
+                        <h3 class="font-bold">¿El diseño se levanta?</h3>
+                        <p class="text-stone-700">¡No tires! Detente, vuelve a colocar la película, cúbrela con el papel y plancha de nuevo esa zona. Deja enfriar otra vez antes de intentar despegar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-content">
+                <h2 class="text-xl font-bold mb-4 text-center">Paso 4: Sellado Final</h2>
+                 <p class="text-center text-stone-600 mb-6">Un paso rápido para una máxima durabilidad.</p>
+                 <div class="space-y-4 text-left">
+                    <div class="p-4 bg-stone-50 rounded-lg">
+                        <p><b>1.</b> Ya sin la película transparente, vuelve a colocar el papel para hornear sobre el diseño.</p>
+                    </div>
+                    <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                         <p><b>2.</b> Plancha con presión firme durante otros 5-10 segundos. ¡Esto sella el diseño a la tela!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-content">
+                <h2 class="text-xl font-bold mb-4 text-center">¡Listo! Cuidados y Consejos</h2>
+                 <div class="grid md:grid-cols-2 gap-4 text-left">
+                    <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                        <h3 class="font-bold mb-2">Cuidados de Lavado</h3>
+                        <ul class="list-disc list-inside text-stone-700 space-y-1">
+                            <li>Espera 24h antes del primer lavado.</li>
+                            <li>Lava la prenda del revés.</li>
+                            <li>Usa agua fría o tibia.</li>
+                            <li>Evita blanqueadores.</li>
+                            <li>Seca al aire preferiblemente.</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="font-bold mb-2">Consejos Clave</h3>
+                         <ul class="list-disc list-inside text-stone-700 space-y-1">
+                            <li><b>Presión:</b> Es tan importante como el calor.</li>
+                            <li><b>Superficie:</b> Debe ser dura, no blanda.</li>
+                            <li><b>Paciencia:</b> El enfriado completo es vital.</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-content text-center">
+                <h2 class="text-2xl font-bold text-green-700 mb-4">¡Felicidades!</h2>
+                <p class="text-lg text-stone-700">Has personalizado tu prenda con éxito.</p>
+                <div class="mt-6 text-5xl">🎉</div>
+                <p class="mt-6 text-stone-600">Disfruta de tu creación única.</p>
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-between items-center">
+            <button id="prevBtn" class="bg-stone-300 hover:bg-stone-400 text-stone-800 font-bold py-2 px-6 rounded-lg transition-colors">
+                Anterior
+            </button>
+            <button id="nextBtn" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                Siguiente
+            </button>
+            <button id="restartBtn" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-lg transition-colors" style="display: none;">
+                Empezar de Nuevo
+            </button>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.step-content');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const restartBtn = document.getElementById('restartBtn');
+            const progressBar = document.getElementById('progressBar');
+            let currentStep = 0;
+            const totalSteps = steps.length;
+
+            function updateControls() {
+                steps.forEach((step, index) => {
+                    step.classList.toggle('active', index === currentStep);
+                });
+
+                const progressPercentage = (currentStep / (totalSteps - 2)) * 100;
+                progressBar.style.width = `${Math.min(100, progressPercentage)}%`;
+
+                if (currentStep === 0) {
+                    prevBtn.style.visibility = 'hidden';
+                } else {
+                    prevBtn.style.visibility = 'visible';
+                }
+
+                if (currentStep === totalSteps - 1) {
+                    nextBtn.style.display = 'none';
+                    prevBtn.style.display = 'none';
+                    restartBtn.style.display = 'block';
+                    progressBar.style.width = '100%';
+                } else {
+                    nextBtn.style.display = 'block';
+                    restartBtn.style.display = 'none';
+                    if (currentStep > 0) prevBtn.style.display = 'block';
+                }
+                
+                if (currentStep === totalSteps - 2) {
+                     nextBtn.textContent = 'Finalizar';
+                } else {
+                    nextBtn.textContent = 'Siguiente';
+                }
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentStep < totalSteps - 1) {
+                    currentStep++;
+                    updateControls();
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentStep > 0) {
+                    currentStep--;
+                    updateControls();
+                }
+            });
+            
+            restartBtn.addEventListener('click', () => {
+                currentStep = 0;
+                updateControls();
+            });
+
+            updateControls();
+        });
+    </script>
+</body>
+</html>
